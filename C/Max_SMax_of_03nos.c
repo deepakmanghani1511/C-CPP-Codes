@@ -1,0 +1,43 @@
+#include<conio.h>
+#include<stdio.h>
+main()
+{
+	int a,b,c,max,smax;
+	printf("Enter a 03 nos: ");
+	scanf("%d%d%d",&a,&b,&c);
+	if(a>b)
+		{
+			if(a>c)
+				{
+					max=a;
+					if(b>c)
+						smax=b;
+					else
+						smax=c;
+				}
+			else
+				{
+					max=c;
+					smax=a;
+				}
+		}
+	else
+		{
+			if(b>c)
+				{
+					max=b;
+					if(a>c)
+						smax=a;
+					else
+						smax=c;
+				}
+			else
+			{
+				max=c;
+				smax=b;
+			}
+		}
+	printf("Max=%d\n",max);
+	printf("SMax=%d\n",smax);
+	getch();
+}
