@@ -1,0 +1,23 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class A{
+    int a;
+    public:
+        void setData(int a){
+            this->a = a;
+        }
+        void getData(){
+            cout << "The value of a is " << a << endl;
+        }
+};
+
+int main() {
+    
+    // this is a keyword which is pointer which points to the object which is being created
+    A a;
+    a.setData(4);
+    a.getData();
+
+    return 0;
+}
